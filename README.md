@@ -14,6 +14,11 @@ This project was originally forked from [Fubra Limited](https://github.com/fubra
 class is preserved in this library. This library can be used whenever you need to build something that interfaces with any
 of the services that use the Government Gateway (e.g. Companies House, HMRC, etc.).
 
+## Requirements
+
+- PHP 7.1+
+- PHP Libraries: XML, mbString, Intl
+
 ## Installation
 
 The library can be installed via [Composer](http://getcomposer.org/). To install, simply add
@@ -29,9 +34,8 @@ it to your `composer.json` file:
 
 And run composer to update your dependencies:
 
-$ curl -s http://getcomposer.org/installer | php
+$ curl -s <http://getcomposer.org/installer> | php
 $ php composer.phar update
-
 
 ## Basic usage
 
