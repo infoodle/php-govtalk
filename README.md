@@ -26,8 +26,14 @@ it to your `composer.json` file:
 
 ```json
 {
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/infoodle/php-govtalk"
+        }
+    ],
     "require": {
-        "thebiggive/php-govtalk": "^1.0"
+        "infoodle/php-govtalk": "^1.0"
     }
 }
 ```
@@ -35,7 +41,7 @@ it to your `composer.json` file:
 And run composer to update your dependencies:
 
 $ curl -s <http://getcomposer.org/installer> | php
-$ php composer.phar update
+$ php composer.phar update --prefer-source
 
 ## Basic usage
 
