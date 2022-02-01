@@ -2,11 +2,6 @@
 
 **A library for applications which interface with the UK Government Gateway**
 
-[![Build Status](https://travis-ci.org/thebiggive/php-govtalk.png?branch=main)](https://travis-ci.org/thebiggive/php-govtalk)
-[![Latest Stable Version](https://poser.pugx.org/thebiggive/php-govtalk/version.png)](https://packagist.org/packages/thebiggive/php-govtalk)
-[![Total Downloads](https://poser.pugx.org/thebiggive/php-govtalk/d/total.png)](https://packagist.org/packages/thebiggive/php-govtalk)
-[![License](https://poser.pugx.org/thebiggive/php-govtalk/license.svg)](https://packagist.org/packages/thebiggive/php-govtalk)
-
 The GovTalk Message Envelope is a standard developed by the United Kingdom government as a means of encapsulating
 a range of government XML services in a single standard data format.
 
@@ -17,7 +12,6 @@ of the services that use the Government Gateway (e.g. Companies House, HMRC, etc
 ## Requirements
 
 - PHP 7.1+
-- PHP Libraries: XML, mbString, Intl
 
 ## Installation
 
@@ -26,22 +20,22 @@ it to your `composer.json` file:
 
 ```json
 {
-    "require": {
-        "thebiggive/php-govtalk": "^1.0"
-    }
+"require": {
+"infoodle/php-govtalk": "^1.0"
+}
 }
 ```
 
 And run composer to update your dependencies:
 
-$ curl -s <http://getcomposer.org/installer> | php
-$ php composer.phar update
+$ curl -s <http: //getcomposer.org/installer> | php
+  $ php composer.phar update
 
-## Basic usage
+  ## Basic usage
 
-This library can be extended and used with any one of the gateways that use the GovTalk Message Envelope and the
-Document Submission Protocol. The following libraries currently use / extend GovTalk:
+  This library can be extended and used with any one of the gateways that use the GovTalk Message Envelope and the
+  Document Submission Protocol. The following libraries currently use / extend GovTalk:
 
-Library | Composer Package | Maintainer
---- | --- | ---
-[HMRC Gift Aid](https://github.com/thebiggive/hmrc-gift-aid) | thebiggive/hmrc-gift-aid | [Noel Light-Hilary](https://github.com/noellh)
+  Library | Composer Package | Maintainer
+  --- | --- | ---
+  [HMRC Gift Aid](https://github.com/infoodle/hmrc-gift-aid) | infoodle/hmrc-gift-aid | [Noel Light-Hilary](https://github.com/noellh)
